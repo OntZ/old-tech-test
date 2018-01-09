@@ -5,7 +5,7 @@ function Question1(inputArray) {
 	// You should write a function that repeats an array twice and returns it.
 	// The original array should not be modified.
 
-	return undefined;
+	return [...inputArray, ...inputArray];
 }
 
 function Question2(inputArray) {
@@ -13,14 +13,19 @@ function Question2(inputArray) {
 	// You should write a function that reverses an array and returns it.
 	// The original array should not be modified.
 
-	return undefined;
+	return inputArray.slice().reverse();
 }
 
 function Question3(inputArray, itemToFind) {
 	// COUNT THE NUMBER OF ELEMENTS IN AN ARRAY
 	// You should write a function that returns a count of the number of 'itemToFind' that exist in 'inputArray'
-
-	return undefined;
+	let counter = 0;
+	inputArray.forEach(function(el) {
+		if (el === itemToFind) {
+			counter++;
+		}
+	})
+	return counter;
 }
 
 function Question4(deckOfCardsArray) {
@@ -28,7 +33,13 @@ function Question4(deckOfCardsArray) {
 	// You should write a function that shuffles the items in 'deckOfCardsArray'
 	// The original array should be modified
 
-	// No return value needed
+	for (let i = deckOfCardsArray.length - 1; i > 0; i--) {
+		let aux = deckOfCardsArray[i];
+		let j = Math.floor(Math.random() * (i + 1));
+
+		deckOfCardsArray[i] = deckOfCardsArray[j];
+		deckOfCardsArray[j] = aux;
+	}
 }
 
 function Question5(inputString) {
@@ -37,5 +48,5 @@ function Question5(inputString) {
 	// the words should be unchanged.
 	// e.g. "the cat sat on the mat" should become "mat the on sat cat the"
 
-	return undefined;
+	return inputString.split(' ').reverse().join(' ');
 }
