@@ -1,0 +1,14 @@
+{
+    "firstName": "Serban",
+    "lastName": "Ontanu-Craciun",
+    "birthDate": "1989-01-12",
+    "parents": {
+        "father": "Gelu",
+        "mother": "Mariana"
+    },
+    "spouse": null,
+    "children": [],
+    "heightCm": 178,
+    "shirtSize": "XL",
+    "passions": ["music", "nature", "exploration", "cooking", "lego"]
+}
