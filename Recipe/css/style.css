@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial, sans-serif';
+  font-size: 10px; }
+
+.serif {
+  font-family: 'Georgia, serif'; }
+
+.page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row; }
+  .page .section {
+    height: 100%; }
+    .page .section.info {
+      background-color: #c6573b;
+      color: #FFFFFF;
+      width: 200px;
+      flex-direction: column;
+      padding: 3rem; }
+      .page .section.info .info-items > div {
+        text-align: center; }
+        .page .section.info .info-items > div img {
+          display: block;
+          margin: 1rem auto; }
+        .page .section.info .info-items > div b {
+          font-style: italic; }
+      .page .section.info .info-items .time, .page .section.info .info-items .calories {
+        font-size: 1.4rem; }
+      .page .section.info .info-items .chef-tip, .page .section.info .info-items .cheese {
+        font-size: 1.2rem; }
+    .page .section.recipe {
+      width: 600px;
+      padding: 3rem 2rem 3rem 3rem;
+      background-color: #FFFFFF;
+      color: #000000;
+      font-size: 1.4rem; }
+      .page .section.recipe h1.title {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 6rem;
+        font-weight: bold; }
+        .page .section.recipe h1.title .subtitle {
+          color: #c6573b; }
+      .page .section.recipe .description {
+        padding: 1rem; }
+        .page .section.recipe .description .first-letter {
+          float: left;
+          position: relative;
+          top: 0.5rem;
+          margin-right: 0.5rem;
+          font-size: 5rem;
+          font-weight: bold;
+          line-height: 4rem; }
+      .page .section.recipe .instructions {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 2px solid #c6573b; }
+        .page .section.recipe .instructions .directions {
+          width: 50%; }
+          .page .section.recipe .instructions .directions ol {
+            padding-left: 1rem;
+            list-style: none;
+            counter-reset: li; }
+            .page .section.recipe .instructions .directions ol li {
+              margin-bottom: 1rem;
+              display: table-row; }
+              .page .section.recipe .instructions .directions ol li::before {
+                content: counter(li) ". ";
+                counter-increment: li;
+                color: #c6573b;
+                display: table-cell;
+                text-align: right;
+                width: 1.6rem;
+                font-size: 1.6rem;
+                font-weight: bold; }
+              .page .section.recipe .instructions .directions ol li div {
+                margin-bottom: 1rem; }
+        .page .section.recipe .instructions .ingredients {
+          width: 50%;
+          color: #c6573b; }
+          .page .section.recipe .instructions .ingredients ul {
+            padding-left: 1rem;
+            list-style: none; }
+            .page .section.recipe .instructions .ingredients ul li {
+              margin-bottom: 0.5rem; }
+        .page .section.recipe .instructions .instructions-header {
+          padding-left: 1rem;
+          background-color: #c6573b;
+          color: #FFFFFF;
+          font-size: 1.6rem;
+          font-style: italic; }
+      .page .section.recipe .fact {
+        color: #c6573b;
+        width: 50%;
+        float: right; }
+        .page .section.recipe .fact p {
+          text-indent: 30px; }
+    .page .section.pic {
+      width: calc(100% - 800px);
+      background: url("../img/apetizing.png") top right no-repeat;
+      background-size: cover; }
+
+@media (max-width: 1200px) {
+  .section.info {
+    width: 160px; } }
+
+@media (max-width: 768px) {
+  .page {
+    flex-direction: column; }
+    .page .section {
+      width: 100% !important;
+      height: unset; }
+      .page .section.recipe h1.title {
+        font-size: 4rem; }
+  .hidden-xs {
+    display: none !important; } }
