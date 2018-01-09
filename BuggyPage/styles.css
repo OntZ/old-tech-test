@@ -1,0 +1,76 @@
+body, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+header {
+  background: #333;
+  padding: 10px;
+  overflow: hidden;
+  text-align: right; }
+  header ul {
+    list-style: none;
+    padding-top: 8px; }
+  header li {
+    display: inline;
+    padding: 5px; }
+  header a {
+    color: #fff; }
+  header img {
+    height: 30px;
+    float: left; }
+
+h1 {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  background: no-repeat center center url(https://res.cloudinary.com/spotlightuk/image/fetch/w_2048,c_limit/https://spotlight-cmsmedia.s3-eu-west-1.amazonaws.com/media/1192/opened-space.png);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
+  margin-bottom: 20px; }
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 50px; }
+
+.centered {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.articleList {
+  margin-bottom: 20px; }
+  .articleList:after {
+    content: "";
+    clear: both;
+    display: table; }
+  .articleList li {
+    width: 33%;
+    float: left;
+    padding: 5px; }
+  .articleList img {
+    display: block;
+    width: 100%; }
+  .articleList .articleListItem {
+    display: block;
+    border: 1px solid #dadada;
+    text-decoration: none;
+    color: inherit; }
+  .articleList .section {
+    padding-bottom: 5px; }
+  .articleList .articleInfo {
+    padding: 15px; }
+  .articleList .title {
+    font-size: 20px; }
+  .articleList .category {
+    color: #ea5d5a; }
+  .articleList .category:hover {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=styles.css.map */

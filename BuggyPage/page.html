@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<header>
+		<div class="centered">
+			<img src="https://www.spotlight.com/Features/Sunlight/Images/SpotlightLogoRow90.svg" />
+			<ul>
+				<li><a href="#">News</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">What's on</a></li>
+			</ul>
+		</div>
+	</header>
+	<article>
+		<h1>News and advice</h1>
+		<div class="centered">
+			<p>This is some example text at the start of the page. There should be <strong>three</strong> paragraphs. Some of the words should be <strong>bold</strong> but most of them should not be <strong>bold.</p>
+			<p>Brute elitr noster in eum, ad sed vidit movet inciderint, nam ut vidisse salutandi incorrupte. Pro no probo iuvaret, quot tollit euismod nec at. Sed sensibus repudiare ad, et has euismod propriae. Id per postulant iracundia, quo paulo consequuntur cu. Sit no dolorum noluisse hendrerit, consul integre ex sit. Quas dolorem reprehendunt et his, usu ignota torquatos forensibus ea.</p>
+			<p>Qui quis zril incorrupte at. Ius clita vidisse concludaturque id. Usu eu erat admodum scriptorem, ex atqui graece vix. Nec ut nonumes postulant. Docendi nominavi convenire sit id, eos et iudico tacimates, ne eam falli aeque choro.</p>
+			<ul class="articleList">
+				<!-- This block is used as a template for the article list items. See renderArticleList.js -->
+				<script type="text/html" id="template">
+					<li>
+						<a href="uninteresting_pages/article.txt?HREF" class="articleListItem">
+							<img src="IMAGESOURCE" />
+							<div class="articleInfo">
+								<div class="category"><span href="uninteresting_pages/category.txt?CATEGORY">CATEGORY</span></div>
+								<div class="title">TITLE</div>
+							</div>
+						</a>
+					</li>
+				</script>
+
+			</ul>
+			<p>This is the footer text, it should show five paragraphs</p>
+			<p>This is paragraph 1.</p>
+			<p class="bob>This is paragraph 2.</p>
+			<p>This is paragraph 3.</p>
+			<p class="bob">This is paragraph 4.</p>
+			<p>This is paragraph 5.</p>
+		</div>
+	</article>
+	<footer>
+		<div class="centered">
+			Copyright 2017 - Simple Page Inc
+		</div>
+	</footer>
+	<script src="renderArticleList.js"></script>
+</body>
+</html>
